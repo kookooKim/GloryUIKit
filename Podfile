@@ -19,7 +19,7 @@ target 'GloryUIKit' do
 
   common_libs
 
-  pod 'SnapKit'
+#  pod 'SnapKit'
 
 end
 
@@ -28,7 +28,7 @@ target 'GKitSmaple' do
 
   common_libs
 
-  pod 'FLEX'
+#  pod 'FLEX'
 
   target 'GKitSmapleTests' do
     inherit! :search_paths
