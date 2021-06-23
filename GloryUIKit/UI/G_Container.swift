@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class G_Container : NSObject {
+    
+}

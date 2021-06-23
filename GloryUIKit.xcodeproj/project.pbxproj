@@ -22,17 +22,21 @@
 
 /* Begin PBXBuildFile section */
 		64FB5F40B2D25F48D9028639 /* Pods_GloryUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FA0965D0CBE3B957BA2EE1 /* Pods_GloryUIKit.framework */; };
+		A64DDF612682B55F003D4553 /* Stacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64DDF602682B55F003D4553 /* Stacker.swift */; };
 		A6D023D7267208AC00650689 /* GloryUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D023D5267208AC00650689 /* GloryUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6D0240026720DA600650689 /* GloryUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D023FF26720DA600650689 /* GloryUIKit.swift */; };
+		A6F45C8D2677511E0092868F /* G_Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F45C8C2677511E0092868F /* G_Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CDD417EF2726C4BB9F2AC28 /* Pods-GloryUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GloryUIKit.debug.xcconfig"; path = "Target Support Files/Pods-GloryUIKit/Pods-GloryUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A4FA0965D0CBE3B957BA2EE1 /* Pods_GloryUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GloryUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64DDF602682B55F003D4553 /* Stacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacker.swift; sourceTree = "<group>"; };
 		A6D023D2267208AC00650689 /* GloryUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GloryUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D023D5267208AC00650689 /* GloryUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GloryUIKit.h; sourceTree = "<group>"; };
 		A6D023D6267208AC00650689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D023FF26720DA600650689 /* GloryUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloryUIKit.swift; sourceTree = "<group>"; };
+		A6F45C8C2677511E0092868F /* G_Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G_Container.swift; sourceTree = "<group>"; };
 		EC8CE1B600FE55F9405DEBB6 /* Pods-GloryUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GloryUIKit.release.xcconfig"; path = "Target Support Files/Pods-GloryUIKit/Pods-GloryUIKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,11 +82,29 @@
 		A6D023D4267208AC00650689 /* GloryUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A6F45C80267750130092868F /* UI */,
 				A6D023D5267208AC00650689 /* GloryUIKit.h */,
 				A6D023D6267208AC00650689 /* Info.plist */,
 				A6D023FF26720DA600650689 /* GloryUIKit.swift */,
 			);
 			path = GloryUIKit;
+			sourceTree = "<group>";
+		};
+		A6F45C80267750130092868F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A6F45C81267750200092868F /* Stack */,
+				A6F45C8C2677511E0092868F /* G_Container.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A6F45C81267750200092868F /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				A64DDF602682B55F003D4553 /* Stacker.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 		B2BE5D8AF510142BEB431431 /* Frameworks */ = {
@@ -219,7 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64DDF612682B55F003D4553 /* Stacker.swift in Sources */,
 				A6D0240026720DA600650689 /* GloryUIKit.swift in Sources */,
+				A6F45C8D2677511E0092868F /* G_Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		A62221692676DB65000FE172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62221672676DB65000FE172 /* LaunchScreen.storyboard */; };
 		A62221742676DB66000FE172 /* GKSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62221732676DB66000FE172 /* GKSampleTests.swift */; };
 		A622217F2676DB66000FE172 /* GKSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622217E2676DB66000FE172 /* GKSampleUITests.swift */; };
+		A6C5BC6F267723A500A800FA /* GloryUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5BC6E267723A500A800FA /* GloryUIKit.framework */; };
+		A6C5BC70267723A500A800FA /* GloryUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5BC6E267723A500A800FA /* GloryUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAEDAD854AE92BE630ADB9E3 /* Pods_GKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121B5CB9610033937E4AD70B /* Pods_GKSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A6C5BC71267723A500A800FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6C5BC70267723A500A800FA /* GloryUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		121B5CB9610033937E4AD70B /* Pods_GKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		742677EEE9F52C77D57BE7E4 /* Pods-GKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKSample.debug.xcconfig"; path = "Target Support Files/Pods-GKSample/Pods-GKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A62221592676DB64000FE172 /* GKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622215C2676DB64000FE172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A622215E2676DB64000FE172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,8 @@
 		A622217A2676DB66000FE172 /* GKSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A622217E2676DB66000FE172 /* GKSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKSampleUITests.swift; sourceTree = "<group>"; };
 		A62221802676DB66000FE172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C5BC6E267723A500A800FA /* GloryUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GloryUIKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/GloryUIKit-azelhljfdjghjndkaowlzrtpumjk/Build/Products/Debug-iphoneos/GloryUIKit.framework"; sourceTree = "<group>"; };
+		DA945385210221B914D4D4BC /* Pods-GKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKSample.release.xcconfig"; path = "Target Support Files/Pods-GKSample/Pods-GKSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEDAD854AE92BE630ADB9E3 /* Pods_GKSample.framework in Frameworks */,
+				A6C5BC6F267723A500A800FA /* GloryUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36ECAEC970CE2AA015F529F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				742677EEE9F52C77D57BE7E4 /* Pods-GKSample.debug.xcconfig */,
+				DA945385210221B914D4D4BC /* Pods-GKSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		6D5FC695798EF687F6C80E91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6C5BC6E267723A500A800FA /* GloryUIKit.framework */,
+				121B5CB9610033937E4AD70B /* Pods_GKSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A62221502676DB64000FE172 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +125,8 @@
 				A62221722676DB66000FE172 /* GKSampleTests */,
 				A622217D2676DB66000FE172 /* GKSampleUITests */,
 				A622215A2676DB64000FE172 /* Products */,
+				36ECAEC970CE2AA015F529F1 /* Pods */,
+				6D5FC695798EF687F6C80E91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62221832676DB66000FE172 /* Build configuration list for PBXNativeTarget "GKSample" */;
 			buildPhases = (
+				09B8685A328CB428818DFC82 /* [CP] Check Pods Manifest.lock */,
 				A62221552676DB64000FE172 /* Sources */,
 				A62221562676DB64000FE172 /* Frameworks */,
 				A62221572676DB64000FE172 /* Resources */,
+				59526EE0A7712132E50F01A7 /* [CP] Embed Pods Frameworks */,
+				A6C5BC71267723A500A800FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +299,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B8685A328CB428818DFC82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59526EE0A7712132E50F01A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKSample/Pods-GKSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKSample/Pods-GKSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GKSample/Pods-GKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A62221552676DB64000FE172 /* Sources */ = {
@@ -433,6 +522,7 @@
 		};
 		A62221842676DB66000FE172 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 742677EEE9F52C77D57BE7E4 /* Pods-GKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +542,7 @@
 		};
 		A62221852676DB66000FE172 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA945385210221B914D4D4BC /* Pods-GKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

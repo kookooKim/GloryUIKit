@@ -6,7 +6,7 @@ inhibit_all_warnings!
 
 workspace 'GloryUIKit'
 project 'GloryUIKit.xcodeproj'
-project 'GKitSmaple/GKitSmaple.xcodeproj'
+project 'GKSample/GKSample.xcodeproj'
 
 
 def common_libs
@@ -23,15 +23,15 @@ target 'GloryUIKit' do
 
 end
 
-target 'GKitSmaple' do
-  project 'GKitSmaple/GKitSmaple.xcodeproj'
+target 'GKSample' do
+  project 'GKSample/GKSample.xcodeproj'
 
   common_libs
 
 #  pod 'FLEX'
 
-  target 'GKitSmapleTests' do
-    inherit! :search_paths
-  end
+#  target 'GKSample' do
+#    inherit! :search_paths
+#  end
 
 end
