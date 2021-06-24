@@ -17,8 +17,14 @@ open class Stacker {
     init(){
         self.view.axis           = .vertical
         self.view.spacing        = 8
-        self.view.distribution   = .equalCentering
+        self.view.distribution   = .fillProportionally
         self.view.translatesAutoresizingMaskIntoConstraints = true
+        self.view.backgroundColor = .orange
+        self.view.frame          = CGRect(x: 0, y: 0, width: 300, height: 300)
+    }
+    open func bindParentView(parentView : UIView) -> Self {
+        self.view.frame = parentView.frame
+        return self
     }
     
     /// - Default : vertical
@@ -39,7 +45,7 @@ open class Stacker {
         return self
     }
     
-    open func addViews(_ views : UIView?... ) -> Self{
+    open func addView(_ views : UIView?... ) -> Self{
         views.forEach({ v in
             if let view = v {
                 self.view.addArrangedSubview(view)
@@ -47,10 +53,11 @@ open class Stacker {
         })
         return self
     }
-    open func addView(_ view : UIView?) -> Self{
-        if let v = view {
-            self.view.addArrangedSubview(v)
-        }
-        return self
-    }
+//    open func addView(_ view : UIView?) -> Self{
+//        if let v = view {
+//            self.view.addArrangedSubview(v)
+////            self.view.heightAnchor.constraint(equalTo:self.view.arrangedSubviews[0].widthAnchor).isActive = true
+//        }
+//        return self
+//    }
 }
